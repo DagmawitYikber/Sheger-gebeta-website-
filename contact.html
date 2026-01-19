@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Review | Sheger Gebeta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">SHEGER <span>GEBETA</span></div>
+        <div class="mobile-toggle">☰</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="contact.html" class="active">Request Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h1 class="section-title">Get In Touch</h1>
+
+        <div class="contact-container">
+            <!-- Review Request Form -->
+            <div>
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary-color);">Request a Restaurant Review</h2>
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Contact Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="example@email.com"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Restaurant Budget Range</label>
+                        <select class="form-control" name="budget">
+                            <option value="cheap">$ (Budget Friendly)</option>
+                            <option value="moderate">$$ (Moderate)</option>
+                            <option value="expensive">$$$ (High End)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Have you eaten there before?</label>
+                        <div class="form-options">
+                            <label class="radio-group">
+                                <input type="radio" name="visited" value="yes" checked> Yes
+                            </label>
+                            <label class="radio-group">
+                                <input type="radio" name="visited" value="no"> No
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Review Focus (Select all that apply)</label>
+                        <div class="form-options">
+                            <label class="checkbox-group">
+                                <input type="checkbox" name="focus" value="food"> Food Quality
+                            </label>
+                            <label class="checkbox-group">
+                                <input type="checkbox" name="focus" value="service"> Service
+                            </label>
+                            <label class="checkbox-group">
+                                <input type="checkbox" name="focus" value="ambiance"> Ambiance
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Restaurant Details / Special Request</label>
+                        <textarea id="message" name="message" class="form-control" rows="5"
+                            placeholder="Tell us about the place..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">Submit Request</button>
+                </form>
+            </div>
+
+            <!-- Table Section -->
+            <div>
+                <h2 style="margin-bottom: 1.5rem; color: var(--primary-color);">Our Review Schedule</h2>
+                <div class="table-container">
+                    <table class="review-table">
+                        <thead>
+                            <tr>
+                                <th>Period</th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Morning</b></td>
+                                <td>Coffee Shop Hopping</td>
+                                <td rowspan="2"
+                                    style="vertical-align: middle; background-color: rgba(255, 183, 3, 0.1);">Editing
+                                    Day (No Reviews)</td>
+                                <td>Breakfast Spots</td>
+                            </tr>
+                            <tr>
+                                <td><b>Lunch</b></td>
+                                <td rowspan="2" style="vertical-align: middle;">Burger Tour (Bole)</td>
+                                <td>Traditional Lunch</td>
+                            </tr>
+                            <tr>
+                                <td><b>Dinner</b></td>
+                                <td>Pizza Testing</td>
+                                <td>Fine Dining</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="background-color: #2a2a2a; font-style: italic;">Note: Schedule
+                                    subject to change based on new openings!</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <h3>Why Request a Review?</h3>
+                    <ul style="margin-top: 1rem; color: var(--text-muted); line-height: 2;">
+                        <li>✓ Discover hidden gems in Addis.</li>
+                        <li>✓ Get honest, unbiased opinions.</li>
+                        <li>✓ Support local businesses.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">SHEGER <span>GEBETA</span></div>
+            <div class="social-links">
+                <a href="https://www.tiktok.com/@shegergebeta" target="_blank">TikTok</a>
+                <a href="https://www.instagram.com/shegergebeta/" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/ShegerGebeta/" target="_blank">Facebook</a>
+                <a href="https://t.me/shegergebeta" target="_blank">Telegram</a>
+            </div>
+            <p style="color: var(--text-muted);">&copy; 2026 Sheger Gebeta. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
